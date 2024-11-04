@@ -36,12 +36,10 @@ This project is licensed under the MIT License.
 
 ## Tests
 For an example of the test execution, please refer to the video demonstration:
-<video controls src="client/assets/e2eTest.mp4" title="Title"></video>
+<video controls src="e2eTesting.mp4" title="Title"></video>
 
 ## Questions?
 For any questions, feel free to reach out:
 
 - **GitHub**: [durfey32](https://github.com/durfey32)
 - **Email**: [durfey_32@yahoo.com](mailto:durfey_32@yahoo.com)
-
-Please feel free to email me with any questions.
