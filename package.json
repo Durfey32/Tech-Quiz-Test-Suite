@@ -21,6 +21,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@cypress/react18": "^2.0.1",
     "@testing-library/cypress": "^10.0.2",
     "@types/react": "^18.3.3",
     "@vitejs/plugin-react": "^4.3.1",

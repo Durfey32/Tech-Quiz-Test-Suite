@@ -10,6 +10,9 @@
       "jsx": "react-jsx",
       "strict": true
     },
-    "include": ["**/*.tsx", "**/*.ts", "**/*.js", "**/*.jsx"]
+    "include": [
+    "cypress/**/*.ts",
+    "cypress/**/*.tsx",
+    "../client/src/components/Quiz.tsx"]
   }
   

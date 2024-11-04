@@ -1,38 +1,36 @@
-describe('Quiz Component', () => {
+describe("Quiz E2E Test", () => {
     beforeEach(() => {
-        cy.visit('/');
+        cy.visit("/");
     });
 
-    it ('should begin with the quiz and the question one should appear', () => {
-        cy.get('button').contains('Start Quiz').click();
-        cy.get('.card').should('be.visible');
-        cy.get('h2').should('be.visible');
+    it("should begin with the quiz and display the first question", () => {
+        cy.contains("Start Quiz").click();
+        cy.get("h2").should("be.visible");
     });
 
-    it ('should answer question one', () => {
-        cy.get('button').contains('Start Quiz').click();
-        cy.get('button').contains('2').click();
+    it("should answer a question and proceed to the next", () => {
+        cy.contains("Start Quiz").click();
+        cy.get("h2").invoke("text").then((initialQuestion) => {
+            cy.get(".btn-primary").first().click();
+            cy.get("h2").should(($newQuestion) => {
+                expect($newQuestion.text()).not.to.eq(initialQuestion);
+            });
+        });
     });
 
-    it ('should complete the entire quiz', () => {
-        cy.get('button').contains('Start Quiz').click();
-        for(let i = 0; i < 10; i++) {
-            cy.get('button').contains('1').click();
+    it("should complete each question in the quiz until it is finished", () => {
+        cy.contains("Start Quiz").click();
+
+        const totalQuestions = 10;
+        for (let i = 0; i < totalQuestions; i++) {
+            cy.get("h2").should("not.be.empty");
+            cy.get(".btn-primary").first().click();
+            cy.wait(500);
         }
-        cy.get('.card').contains('Quiz Completed');
-        cy.get('.alert-success').should('be.visible').and('contain', 'Your score');
-    });
 
-    it ('should start the quiz over after answering the last question', () => {
-        cy.get('button').contains('Start Quiz').click();
-        for(let i = 0; i < 10; i++) {
-            cy.get('button').contains('1').click();
-        }
-        cy.get('.card').contains('Quiz Completed');
-        cy.get('.alert-success').should('be.visible').and('contain', 'Your score');
-        cy.get('button').contains('Take New Quiz').should('be.visible');
-        cy.get('button').contains('Take New Quiz').click();
-        cy.get('h2').should('be.visible');
+        cy.contains("Quiz Complete").should("be.visible");
+        cy.get(".alert-success").should("contain", "Your score");
+        cy.contains("Take New Quiz").click();
+        cy.get("h2").should("not.be.empty");
     });
 });
-

@@ -1,27 +1,93 @@
-[{
-      "question": "What is the output of print(2 ** 3)?",
-      "answers": [
-        { "text": "6", "isCorrect": false },
-        { "text": "8", "isCorrect": true },
-        { "text": "9", "isCorrect": false },
-        { "text": "12", "isCorrect": false }
-      ]
-    },
-    {
-      "question": "Which of the following is a mutable data type in Python?",
-      "answers": [
-        { "text": "str", "isCorrect": false },
-        { "text": "tuple", "isCorrect": false },
-        { "text": "list", "isCorrect": true },
-        { "text": "int", "isCorrect": false }
-      ]
-    },
-    {
-      "question": "What is the keyword used to define a function in Python?",
-      "answers": [
-        { "text": "function", "isCorrect": false },
-        { "text": "func", "isCorrect": false },
-        { "text": "def", "isCorrect": true },
-        { "text": "define", "isCorrect": false }
-      ]
-    }]
+[
+  {
+    "question": "How many inches are in a foot?",
+    "answers": [
+      { "text": "12", "isCorrect": true },
+      { "text": "10", "isCorrect": false },
+      { "text": "24", "isCorrect": false },
+      { "text": "8", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which animal is man's best friend?",
+    "answers": [
+      { "text": "Cat", "isCorrect": false },
+      { "text": "Dog", "isCorrect": true },
+      { "text": "Fish", "isCorrect": false },
+      { "text": "Bird", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the capital of Utah?",
+    "answers": [
+      { "text": "Salt Lake City", "isCorrect": true },
+      { "text": "Provo", "isCorrect": false },
+      { "text": "Orem", "isCorrect": false },
+      { "text": "St. George", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the output of 2 + 2?",
+    "answers": [
+      { "text": "3", "isCorrect": false },
+      { "text": "4", "isCorrect": true },
+      { "text": "5", "isCorrect": false },
+      { "text": "6", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the output of 3 * 3?",
+    "answers": [
+      { "text": "6", "isCorrect": false },
+      { "text": "9", "isCorrect": true },
+      { "text": "12", "isCorrect": false },
+      { "text": "15", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the output of 4 / 2?",
+    "answers": [
+      { "text": "1", "isCorrect": false },
+      { "text": "2", "isCorrect": true },
+      { "text": "3", "isCorrect": false },
+      { "text": "4", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What element is represented by the symbol 'H'?",
+    "answers": [
+      { "text": "Helium", "isCorrect": false },
+      { "text": "Hydrogen", "isCorrect": true },
+      { "text": "Hafnium", "isCorrect": false },
+      { "text": "Hassium", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "how many feet are in a yard?",
+    "answers": [
+      { "text": "2", "isCorrect": false },
+      { "text": "3", "isCorrect": true },
+      { "text": "4", "isCorrect": false },
+      { "text": "5", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the square root of 16?",
+    "answers": [
+      { "text": "2", "isCorrect": false },
+      { "text": "3", "isCorrect": false },
+      { "text": "4", "isCorrect": true },
+      { "text": "5", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Who wrote 'Romeo and Juliet'?",
+    "answers": [
+      { "text": "William Shakespeare", "isCorrect": true },
+      { "text": "Jane Austen", "isCorrect": false },
+      { "text": "Charles Dickens", "isCorrect": false },
+      { "text": "Mark Twain", "isCorrect": false }
+    ]
+  }
+
+]
