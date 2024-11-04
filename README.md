@@ -26,6 +26,8 @@ To run the Cypress tests, you can use either of the following commands:
 ```bash
 npm run test        # Runs tests in headless mode
 npm run cypress     # Opens the Cypress interactive test runner
+
+npm run start:dev   # Needs to be ran in a seperate terminal
 ```
 
 ## License
