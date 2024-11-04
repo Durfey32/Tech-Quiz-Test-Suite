@@ -11,6 +11,7 @@ This project implements end-to-end (E2E) testing using Cypress for a quiz-based 
 - [License](#license)
 - [Features](#features)
 - [Tests](#tests)
+- [Screenshots](#screenshots)
 - [Questions](#questions)
 
 ## Installation
@@ -36,7 +37,10 @@ This project is licensed under the MIT License.
 
 ## Tests
 For an example of the test execution, please refer to the video demonstration:
-<video controls src="e2eTesting.mp4" title="Title"></video>
+[Watch the video demonstration](https://app.screencastify.com/v3/watch/yWCqkjg3mYnkY27HUpR8)
+
+## Screenshots
+![alt text](Cypress.png)
 
 ## Questions?
 For any questions, feel free to reach out:
